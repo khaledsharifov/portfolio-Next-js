@@ -1,27 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .btn-contacts {
+    @apply font-[500] bg-[black] border-[2px] opacity-[0.8] border-[#FFFFFF4D] rounded-[50px] px-[30px] py-[10px] uppercase;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  .btn-yellow {
+    @apply bg-[#FF9142] uppercase font-rubik flex items-center gap-2 font-[500] text-white text-[13px] py-3 px-6 rounded-[50px];
+  }
+  .bg-light {
+    @apply bg-[#FFFFFF2E] h-[180px] w-[400px] rounded-r-[50px] rotate-6 rounded-l-[30px] blur-[60px] z-[-1];
+  }
 }

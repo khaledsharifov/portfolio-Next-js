@@ -1,113 +1,112 @@
-import Image from 'next/image'
+"use client";
+import Image from "next/image";
+import rightArrow from "../../public/icons/right.svg";
+import rightArrow_2 from "../../public/icons/rightArrow.svg";
+import manImg from "../../public/image/man.svg";
+import { useRouter } from "next/navigation";
+import projectImg1 from "../../public/image/Img_1.svg";
+import projectImg2 from "../../public/image/Img_2.svg";
+import projectImg3 from "../../public/image/Img_3.svg";
+import projectImg4 from "../../public/image/Img_4.svg";
+import quotes from "../../public/icons/“.svg";
+import MyProjectCard from "@/components/myProjectCard";
 
 export default function Home() {
+  const { push } = useRouter();
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="max-w-[1166px]  m-auto px-[20px] relative">
+      <section className="flex flex-col items-center text-center py-[100px]">
+        <div className="bg-light absolute right-[150px] top-[80px]"></div>
+        <span className="text-white text-[72px] font-[700] font-syne leading-[90px] pb-[50px] w-[80%]">
+          Adaptive Logo Design for Your Brand
+        </span>
+        <button onClick={() => push("/works")} className="btn-yellow">
+          <span>Explore works </span>
+          <span>
+            <Image src={rightArrow} alt="" />
+          </span>
+        </button>
+      </section>
+      <section className="flex items-center justify-between py-[80px]">
+        <div className="text-white w-[50%]">
+          <h1 className="text-[56px] font-[700] font-syne leading-[70px]">
+            Let’s get know about me closer
+          </h1>
+          <p className="text-[#A8A8A8] text-[18px] font-rubik py-[30px]">
+            Aaronn is a New York-based visual designer focusing on branding and
+            visual identity. Her portfolio showcases her wide range of work,
+            spanning books, posters and web design.
+          </p>
+          <button className="btn-yellow mt-8">Discover More About Me</button>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+        <div className="relative">
+          <span className="w-[110px] h-[34px] rounded-[50px] border-[#FF9142] border-[1px] absolute top-[-15px] right-0"></span>
+          <span className="w-[55px] h-[178px] rounded-[50px] border-[#FF9142] border-[1px] absolute bottom-[50px] left-[-40px]"></span>
+          <Image src={manImg} alt="" className="w-[454px]" />
+        </div>
+      </section>
+      <section className="py-[80px] relative">
+        <div className="bg-light absolute right-[200px] top-[80px] z-[-1]"></div>
+        <h1 className="text-[64px] font-[700] font-syne text-white pb-[40px] text-center">
+          My Projects Highlight
+        </h1>
+        <button
+          onClick={() => push("/works")}
+          className=" border-[#FF9142] border uppercase font-rubik flex items-center m-auto gap-2 font-[500] text-white text-[13px] py-3 px-6 rounded-[50px]"
         >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          <span>Explore More</span>
+          <span>
+            <Image src={rightArrow_2} alt="" />
+          </span>
+        </button>
+        <div className="grid grid-cols-2 gap-x-10 gap-y-20 py-[80px]">
+          <MyProjectCard
+            img={projectImg1}
+            title="Brand Journey Improvements"
+            client="Organc"
+            work="Branding"
+          />
+          <MyProjectCard
+            img={projectImg2}
+            title="Brand Grouping"
+            client="FR"
+            work="Branding"
+          />
+          <MyProjectCard
+            img={projectImg3}
+            title="NFT Glimps"
+            client="Rumanda"
+            work="NFT Design"
+          />
+          <MyProjectCard
+            img={projectImg4}
+            title="Brand Suggestions"
+            client="T3d"
+            work="NFT logo"
+          />
+        </div>
+      </section>
+      <section className="pb-[80px] relative">
+        <div className="bg-light absolute left-[-80px] top-[-30px] h-[300px] w-[250px]"></div>
+        <Image src={quotes} alt="" className=" absolute right-4" />
+        <h1 className="text-[64px] text-white font-[700] font-syne">
+          Testimonial
+        </h1>
+        <p className="text-[#949494] text-[18px] font-rubik w-[78%] py-[30px]">
+          “Aaronn was fantastic to work with from start to finish. We were
+          looking for a simple, stand-out logo and he delivered. I tried
+          designing the logo myself thinking I wouldn’t need to pay the money
+          for a professional graphic designer but I was very wrong. Working with
+          Aaronn was worth every penny and was surprisingly affordable! I
+          remember him saying simplicity is key to a successful logo and boy he
+          was right. I can’t thank Aaronn enough for his effort and
+          professionalism. I would recommend him to anyone looking for a
+          design!”
+        </p>
+        <p className="text-[24px] font-[700]  font-syne text-white">
+          -Martin lee
+        </p>
+      </section>
     </main>
-  )
+  );
 }

@@ -1,0 +1,40 @@
+<svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="18" height="12" fill="#D8D8D8"/>
+<g id="Home Page" clip-path="url(#clip0_0_4)">
+<rect width="1440" height="4977" transform="translate(-791 -563)" fill="#1A1A1A"/>
+<g id="Inputs/Button/Style 01" filter="url(#filter0_d_0_4)">
+<g id="Button" clip-path="url(#clip1_0_4)">
+<rect id="BG" x="-192" y="-27" width="242" height="65" rx="32.5" fill="#FF9142"/>
+<g id="icon">
+<path id="Path" d="M1 5.5H17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Path_2" d="M12 1L17 6L12 11" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<g id="Vector 8" filter="url(#filter1_f_0_4)">
+<path d="M198.187 -113.195C293.282 -119.452 355.347 -154.554 415.715 -236.224C538.011 -401.671 -176.515 -454.228 -77.0047 -272.466C-14.2617 -157.861 76.7203 -105.204 198.187 -113.195Z" fill="white" fill-opacity="0.18"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_4" x="-246" y="-49" width="350" height="173" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="32"/>
+<feGaussianBlur stdDeviation="27"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.011832 0 0 0 0 0.011832 0 0 0 0 0.011832 0 0 0 0.135927 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_4"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_4" result="shape"/>
+</filter>
+<filter id="filter1_f_0_4" x="-286.545" y="-586.646" width="916.391" height="674.24" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_0_4"/>
+</filter>
+<clipPath id="clip0_0_4">
+<rect width="1440" height="4977" fill="white" transform="translate(-791 -563)"/>
+</clipPath>
+<clipPath id="clip1_0_4">
+<rect width="242" height="65" fill="white" transform="translate(-192 -27)"/>
+</clipPath>
+</defs>
+</svg>
