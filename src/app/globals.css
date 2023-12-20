@@ -14,4 +14,7 @@
   .bg-light {
     @apply bg-[#FFFFFF2E] h-[180px] w-[400px] rounded-r-[50px] rotate-6 rounded-l-[30px] blur-[60px] z-[-1];
   }
+  .input {
+    @apply focus:outline-none bg-transparent border-b border-[#949494] pt-[15px] w-[500px] text-[20px] px-2;
+  }
 }
