@@ -23,7 +23,7 @@ const Navbar = () => {
   ];
   return (
     <nav className="flex justify-between items-center py-[30px] max-w-[1166px]  m-auto px-[20px]">
-      <Image src={logo} alt="" />
+      <Link href={'/'}><Image src={logo} alt="" /></Link>
       <ul className="flex items-center gap-8 uppercase text-white font-[400] text-[14px] font-rubik">
         {links.map((link) => {
           return (
