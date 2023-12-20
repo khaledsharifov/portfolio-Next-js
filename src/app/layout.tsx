@@ -1,9 +1,9 @@
-
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import ToTopButton from "@/components/toTopButton";
+import TrailCursor from "@/components/trailCursor";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#1A1A1A] overflow-x-hidden">
+        <TrailCursor/>
         <ToTopButton/>
         <Navbar />
         {children}

@@ -9,7 +9,8 @@ import projectImg2 from "../../public/image/Img_2.svg";
 import projectImg3 from "../../public/image/Img_3.svg";
 import projectImg4 from "../../public/image/Img_4.svg";
 import quotes from "../../public/icons/“.svg";
-import MyProjectCard from "@/components/myProjectCard";
+import MyProjectCard from "@/components/Card/myProjectCard";
+import NextVideo from "next-video";
 
 export default function Home() {
   const { push } = useRouter();

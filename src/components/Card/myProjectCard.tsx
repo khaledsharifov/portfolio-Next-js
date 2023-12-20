@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
 
-interface myProjectCard {
+type Props = {
   img: string;
   title: string;
   client: string;
   work: string;
 }
 
-const myProjectCard = ({ img, title, client, work }: myProjectCard) => {
+const myProjectCard = ({ img, title, client, work }: Props) => {
   return (
     <div>
       <Image src={img} alt="" />
