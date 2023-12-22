@@ -42,7 +42,7 @@ const TopMenu = ({ topMenuClass, setTopMenuClass }: Props) => {
       <div className="flex items-center justify-between px-[30px] py-[6px] border-b">
         <Image src={logo} alt="" />
         <span
-          onClick={() => setTopMenuClass("top-[-100vh]")}
+          onClick={() => setTopMenuClass("top-[-100vh]")} 
           className="text-[40px] text-white mb-[14px]"
         >
           &times;{" "}
