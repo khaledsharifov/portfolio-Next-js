@@ -52,6 +52,7 @@ const TopMenu = ({ topMenuClass, setTopMenuClass }: Props) => {
         {links.map((link) => {
           return (
             <li
+              key={link.link}
               onClick={() => redirect(link.link)}
               className={`text-white text-[22px] uppercase my-[10px] opacity-[0.5] font-rubik ${
                 pathname == link.link && "opacity-[1]"
