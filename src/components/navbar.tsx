@@ -1,11 +1,14 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import logo from "../../public/icons/logo.svg";
+import burger_menu from "../../public/icons/burger-menu.svg";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import TopMenu from "./TopMenu";
 
 const Navbar = () => {
+  const [topMenuClass, setTopMenuClass] = useState("top-[-100vh]");
   const pathname = usePathname();
   const links = [
     {
@@ -27,10 +30,17 @@ const Navbar = () => {
       data-aos-duration="2000"
       className="flex justify-between items-center py-[30px] max-w-[1166px]  m-auto px-[20px]"
     >
+      <TopMenu topMenuClass={topMenuClass} setTopMenuClass={setTopMenuClass} />
       <Link href={"/"}>
         <Image src={logo} alt="" />
       </Link>
-      <ul className="flex items-center gap-8 uppercase text-white font-[400] text-[14px] font-rubik">
+      <Image
+        onClick={() => setTopMenuClass("top-0")}
+        className="text-[white] lg:hidden"
+        src={burger_menu}
+        alt=""
+      />
+      <ul className="hidden lg:flex items-center gap-8 uppercase text-white font-[400] text-[14px] font-rubik">
         {links.map((link) => {
           return (
             <li
