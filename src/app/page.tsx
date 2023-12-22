@@ -10,17 +10,33 @@ import projectImg3 from "../../public/image/Img_3.svg";
 import projectImg4 from "../../public/image/Img_4.svg";
 import quotes from "../../public/icons/“.svg";
 import MyProjectCard from "@/components/Card/myProjectCard";
+import Typed from "react-typed";
 
 export default function Home() {
   const { push } = useRouter();
   return (
     <main className="max-w-[1166px]  m-auto px-[20px] relative">
-      <section className="flex flex-col items-center text-center py-[100px]">
+      <section className="flex flex-col items-center text-center pt-[50px] pb-[100px]">
         <div className="bg-light absolute right-[150px] top-[80px]"></div>
+        <span
+          data-aos="fade-zoom-in"
+          data-aos-delay="500"
+          data-aos-duration="2000"
+          className="text-white text-[48px] font-[700] font-syne leading-[90px] w-[80%]"
+        >
+          I am a{" "}
+          <Typed
+            strings={["Designer", "Developer"]}
+            startDelay={600}
+            typeSpeed={250}
+            backSpeed={150}
+            loop
+          />
+        </span>
         <span
           data-aos="fade-right"
           data-aos-duration="2000"
-          className="text-white text-[72px] font-[700] font-syne leading-[90px] pb-[50px] w-[80%]"
+          className="text-white text-[72px] font-[700] font-syne leading-[90px] pb-[30px] w-[80%]"
         >
           Adaptive Logo Design for Your Brand
         </span>
@@ -36,7 +52,7 @@ export default function Home() {
           </span>
         </button>
       </section>
-      <section className="flex items-center justify-between py-[80px]">
+      <section className="flex items-center justify-between py-[40px]">
         <div className="text-white w-[50%]">
           <h1
             data-aos="fade-right"
