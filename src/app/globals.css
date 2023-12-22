@@ -17,4 +17,7 @@
   .input {
     @apply focus:outline-none bg-transparent border-b border-[#949494] pt-[15px] w-[500px] text-[20px] px-2;
   }
+  .link-hover {
+    @apply before:duration-500 group-hover:before:w-[100%] before:w-[10px] before:h-[2px] before:bg-[white] before:absolute before:bottom-[0px] 
+  }
 }
