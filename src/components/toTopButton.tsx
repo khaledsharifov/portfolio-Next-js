@@ -38,7 +38,7 @@ export default function ToTopButton(): JSX.Element {
             onClick={backToTop}
             className={` ${
               showButton ? `inline-block` : `hidden`
-            } fixed bottom-[40px] right-[40px] p-3 bg-[#FF9142] text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-[#af603b] hover:shadow-lg focus:bg-[#c7783f] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#b36c3a] active:shadow-lg transition duration-150 ease-in-out`}
+            } fixed z-10 bottom-[40px] right-[40px] p-3 bg-[#FF9142] text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-[#af603b] hover:shadow-lg focus:bg-[#c7783f] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#b36c3a] active:shadow-lg transition duration-150 ease-in-out`}
           >
             <svg
               aria-hidden="true"

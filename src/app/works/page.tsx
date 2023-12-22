@@ -12,10 +12,12 @@ const MyWorksPage = () => {
     <main className="max-w-[1166px]  m-auto px-[20px] relative">
       <div className="border-b border-[#949494] py-[70px]">
         <div className="bg-light absolute left-[-100px] top-[40px] w-[300px]"></div>
-        <h1 className=" text-white text-[72px] font-[700] font-syne">
+        <h1  data-aos="fade-right"
+          data-aos-duration="2000" className=" text-white text-[72px] font-[700] font-syne">
           My works
         </h1>
-        <p className="text-[#949494] text-[18px] font-rubik">
+        <p  data-aos="fade-left"
+          data-aos-duration="2000" className="text-[#949494] text-[18px] font-rubik">
           Showcase About Works
         </p>
       </div>

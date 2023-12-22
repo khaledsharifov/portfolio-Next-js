@@ -6,11 +6,11 @@ type Props = {
   title: string;
   client: string;
   work: string;
-}
+};
 
 const myProjectCard = ({ img, title, client, work }: Props) => {
   return (
-    <div>
+    <div data-aos="zoom-in" data-aos-duration="2000">
       <Image src={img} alt="" />
       <h1 className="font-[700] text-white text-[24px] font-syne py-[30px] flex items-center gap-8">
         {title} <span className="w-[48px] bg-[#FF9142] h-[1px]"></span>
