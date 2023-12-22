@@ -21,7 +21,7 @@ const TopMenu = ({ topMenuClass, setTopMenuClass }: Props) => {
       name: "About me",
       link: "/about",
     },
-    {
+    { 
       name: "My works",
       link: "/works",
     },
